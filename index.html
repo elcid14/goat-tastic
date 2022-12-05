@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goatastic Counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+   
+    <div id="count-area" class="count-area">
+      <button type="button" class="btn btn-primary btn-lg">
+        Goat-tastic <span id="count-value" class="badge badge-light">0</span>
+      </button>
+    </div>
+    <div class="main-area">
+
+   <img id="goat" class="goat-image" src="./goat.svg"/>
+
+
+<div class='bucket-container' ondrop="onDrop(event)" ondragover="allowDrag(event)">
+  <!-- <i class="fa bi-bucket fa-lg"></i> -->
+    <img id="bucket" class="bucket-image" src="./bucket.svg"/>
+</div>
+   
+
+
+   
+
+
+
+</div>
+<div class="button-container">
+    <button class="btn btn-primary"  onclick="resetCount()" type="primary">Reset Count</button>
+</div>
+
+
+<script  src="dragDrop.js"></script>
+  </body>
+</html>

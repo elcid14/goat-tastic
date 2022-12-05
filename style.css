@@ -1,0 +1,107 @@
+.main-area{
+padding-top:20px;
+display: flex;
+flex-direction: row;
+justify-items: center;
+}
+
+body{
+    background-color: rgba(184, 205, 209, .5);
+}
+
+.count-area{
+    padding-top: 20px;
+    margin-left: 48%;
+}
+
+
+.goat{
+    height:100px;
+    width:100px;
+    background-color: red;
+}
+
+.bucket-container{
+    padding-top: 10%;
+    margin-left: 30%;
+   
+}
+.bucket{
+    height:300px;
+    width:200px;
+    background-color: blue;
+}
+
+.goat-image{
+    height:200px;
+    width:200px;
+    padding-left: 20px;
+    /* animation: fadeIn 1.5s; */
+}
+
+.bucket-image{
+    height:200px;
+    width:200px;
+}
+
+.button-container{
+    margin: 0;
+     margin-left: 49%;
+    padding-top: 100px;
+}
+
+button{
+   display: block;
+   width:20%;
+
+}
+
+.not-visible{
+    animation: fadeOut 1.0s;
+}
+
+.goat-image:hover{
+    cursor: pointer;
+    animation: shake 5.0s;
+    animation-iteration-count: infinite;
+}
+
+.bucket-animation{
+    animation: grow 1.0s;
+    /* animation-iteration-count: infinite; */
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@keyframes fadeIn {
+    0%{opacity:0}
+    100%{opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0%{opacity:1}
+    25%{opacity:0.5}
+    50%{opacity:0}
+    75%{opacity:0.5}
+    100%{opacity:1}
+}
+
+@keyframes grow {
+    0%{transform: scale(1.25);}
+    25%{transform: scale((0.25));}
+    50%{transform: scale((0.75));}
+    100%{transform: scale(1);}
+}
